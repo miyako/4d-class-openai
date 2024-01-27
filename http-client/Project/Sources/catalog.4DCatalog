@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="http-client" uuid="4DC2DFB3595F4DD99103A3E7D1E491A6" collation_locale="ja">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="経理" uuid="67FCB6899C8445FC866B9F1B43F54997" id="1">
+		<field name="Id" uuid="4BB6F0C3D4EE49EF8407F01C32976B43" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="名前" uuid="399A0AFFC8604EA2ACA77B64487AC4D6" type="10" limiting_length="40" id="2"/>
+		<field name="収入" uuid="C69D6C284CD54CCDA6C5DF6D06784778" type="4" id="3"/>
+		<field name="支出" uuid="9A31B141E2BE46A488FE68585E130A67" type="4" id="4"/>
+		<field name="日付" uuid="30D6970F07C242C1AA6255CCDE81F389" type="8" id="5"/>
+		<primary_key field_name="Id" field_uuid="4BB6F0C3D4EE49EF8407F01C32976B43"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="223" blue="221" alpha="255"/>
+				<coordinates left="0" top="0" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="0381EF7F70374336AD0BBA1A08D50F24" type="1">
+		<field_ref uuid="4BB6F0C3D4EE49EF8407F01C32976B43" name="Id">
+			<table_ref uuid="67FCB6899C8445FC866B9F1B43F54997" name="経理"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
