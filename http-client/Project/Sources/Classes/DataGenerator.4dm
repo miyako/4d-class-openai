@@ -78,7 +78,7 @@ Function setup()
 	This:C1470.messages:=$messages
 	
 	This:C1470.model:=New object:C1471
-	This:C1470.model.values:=["gpt-4-1106-preview"; "gpt-4"; "gpt-3.5-turbo"]
+	This:C1470.model.values:=["gpt-4o"; "gpt-4o-mini"; "gpt-4-turbo"; "gpt-4"; "gpt-3.5-turbo"]
 	This:C1470.model.index:=2
 	
 	return Form:C1466
